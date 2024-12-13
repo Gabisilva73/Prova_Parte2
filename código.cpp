@@ -46,9 +46,10 @@ void loop() {
 
   if(ldrstatus<=threshold){
     Serial.print("está escuro! ligue o led");
-    digitalWrite(led_amarelo, HIGH);
-    delay(1);    
-    digitalWrite(led_amarelo, LOW);
+  digitalWrite(9, LOW);
+  delay(1000);
+  digitalWrite(9, HIGH);
+  delay(1000);
 
   } else{
     Serial.print("está claro! desligue a luz");
